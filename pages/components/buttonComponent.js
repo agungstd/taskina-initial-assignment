@@ -4,7 +4,7 @@ export default function ButtonComponent({ children, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="bg-yellow-400 hover:bg-yellow-500 text-white font-normal py-2 px-4 rounded-lg w-full mt-2"
+      className="bg-yellow-500 hover:bg-yellow-500 text-white font-normal py-2 px-4 rounded-lg w-full mt-3"
     >
       {children}
     </button>
