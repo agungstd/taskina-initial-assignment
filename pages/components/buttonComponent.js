@@ -5,6 +5,7 @@ export default function ButtonComponent({ children, onClick }) {
     <button
       onClick={onClick}
       className="bg-yellow-500 hover:bg-yellow-600 text-white font-normal py-2 px-4 rounded-lg w-full mt-3"
+      aria-label="Button component"
     >
       {children}
     </button>
