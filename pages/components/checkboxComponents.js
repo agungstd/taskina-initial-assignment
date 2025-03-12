@@ -9,20 +9,21 @@ export default function CheckboxComponents({
   value,
 }) {
   return (
-    <div className="flex justify-between items-center p-2 my-2">
+    <div className="flex justify-between items-center p-3 my-2 rounded-md hover:bg-gray-50 transition-colors">
       <label
         htmlFor={`page-${index}`}
-        className="text-gray-900 font-light text-sm"
+        className="text-gray-800 font-medium text-sm cursor-pointer flex-grow"
       >
         {title}
       </label>
       <input
         type="checkbox"
-        id={id}
-        className="form-checkbox h-5 w-5 text-yellow-400 outline-slate-500 rounded-lg"
+        id={`page-${index}`}
+        className="form-checkbox h-5 w-5 text-yellow-500 border-gray-300 rounded focus:ring-yellow-400 focus:ring-opacity-50 transition-colors"
         disabled={isDisabled}
         onChange={onChange}
-        value={value}
+        checked={value}
+        aria-label={title}
       />
     </div>
   );
